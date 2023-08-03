@@ -11,7 +11,7 @@ public class DisplayPrimeNumber {
         int count = 0;
         int total = 1;
         int n = 2;
-        while (total<=numbers){
+        while (total<=numbers && n<100){
             for (int i = 1; i < n; i++){
                if (n%i==0){
                    count++;
