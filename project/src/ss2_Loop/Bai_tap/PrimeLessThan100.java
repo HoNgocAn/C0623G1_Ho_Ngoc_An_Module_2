@@ -5,7 +5,7 @@ public class PrimeLessThan100 {
             int count = 0;
             int n = 2;
             while (n<100){
-                for (int i = 1; i < Math.sqrt(n); i++){
+                for (int i = 1; i < n; i++){
                     if (n%i==0){
                         count++;
                     }
