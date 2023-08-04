@@ -22,8 +22,9 @@ public class GopHaiMang {
         for (int k=3;k<6;k++){
             array[k] = arr2[k- arr2.length];
         }
+        System.out.println("Mảng mới gồm các phần tử : ");
         for (int valueArray: array) {
-            System.out.println(valueArray);
+            System.out.print(valueArray + " ");
         }
     }
 }
