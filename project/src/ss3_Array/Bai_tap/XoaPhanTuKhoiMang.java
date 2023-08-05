@@ -14,13 +14,12 @@ public class XoaPhanTuKhoiMang {
         for (int i=0; i< array.length;i++){
             if (array[i] == x){
                 index = i;
+                System.out.println("X xuất hiện trong mảng và ở vị trị số: " + index );
             }
         }
-        if (index > 0){
-            System.out.println("X có xuất hiện trong mảng và ở vị trị số: " + index );
-        } else {
-            System.out.println("X không xuất hiện trong mảng");
-        }
+        if (index == 0){
+            System.out.println("X không xuất hiện trong mảng ");
+        };
 
         int [] array1 = new int[array.length];
         int count = 0;
