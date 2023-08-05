@@ -22,10 +22,9 @@ public class ThemPhanTuVaoMang {
             arr1[i] = array[i];
         }
         arr1[index] = X;
-        for (int j=index+1;j<arr1.length-1;j++){
+        for (int j=index+1;j<arr1.length;j++){
             arr1[j] = array[j-1];
         }
-        arr1[arr1.length-1] = array[array.length-1];
         System.out.println("Mảng mới là: " + " ");
         for (int k=0; k< arr1.length;k++){
             System.out.print(arr1[k] + " ");
