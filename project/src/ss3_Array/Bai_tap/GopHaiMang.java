@@ -19,7 +19,7 @@ public class GopHaiMang {
         for (int h=0; h<arr1.length; h++){
             array[h] = arr1[h];
         }
-        for (int k=arr2.length;k<array.length;k++){
+        for (int k=arr1.length;k<array.length;k++){
             array[k] = arr2[k- arr2.length];
         }
         System.out.println("Mảng mới gồm các phần tử : ");
