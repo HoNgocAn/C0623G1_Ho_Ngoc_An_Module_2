@@ -2,7 +2,7 @@ package ss1_Introduction_to_java.Bai_tap;
 
 import java.util.Scanner;
 
-public class Currency_conversion {
+public class CurrencyConversion {
     public static void main(String[] args) {
         Double vnd;
         Scanner scanner = new Scanner(System.in);

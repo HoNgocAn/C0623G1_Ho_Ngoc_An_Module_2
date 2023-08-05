@@ -2,7 +2,7 @@ package ss1_Introduction_to_java.Bai_tap;
 
 import java.util.Scanner;
 
-public class Read_numbers_into_words {
+public class ReadNumbersIntoWords {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
