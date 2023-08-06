@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class XoaPhanTuKhoiMang {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5, 5, 7};
+        int[] array = {1, 2, 3, 5, 5, 5, 7};
         int x;
         Scanner input = new Scanner(System.in);
         System.out.println("Nhập X");

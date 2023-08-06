@@ -25,7 +25,7 @@ public class ThemPhanTuVaoMang {
         for (int j=index+1;j<arr1.length;j++){
             arr1[j] = array[j-1];
         }
-        System.out.println("Mảng mới là: " + " ");
+        System.out.println("Mảng mới là: ");
         for (int k=0; k< arr1.length;k++){
             System.out.print(arr1[k] + " ");
         }
