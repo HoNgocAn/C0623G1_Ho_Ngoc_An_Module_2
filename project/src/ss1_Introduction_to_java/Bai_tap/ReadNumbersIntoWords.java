@@ -11,7 +11,7 @@ public class ReadNumbersIntoWords {
         String[] arr1 = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
         String[] arr2 = {"twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
         String[] arr3 = {"onehundred", "twohundred", "threehundred", "fourhundred", "fivehundred", "sixhundred", "sevenhundred", "eighthundred", "ninehundred"};
-
+        String[] arr4 = {"ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
         if (numbers >= 0 && numbers < 10) {
             switch (numbers) {
                 case 0:
@@ -85,30 +85,30 @@ public class ReadNumbersIntoWords {
                     break;
             }
         } else if (numbers >= 20 && numbers < 100) {
-            double number2 = Math.floor(numbers / 10);
-            double number3 = numbers % 10;
-            for (int i = 0; i < arr2.length; i++) {
-                for (int j = 0; j < arr1.length; j++) {
-                    if (number2 - 2 == i && number3 == j && number3 != 0) {
-                        System.out.println(arr2[i] + arr1[j]);
-                    }
-                }
+            int number2 = numbers / 10;
+            int number3 = numbers % 10;
+            if (number3 == 0) {
+                System.out.println(arr2[number2 - 2]);
+            } else {
+                System.out.println(arr2[number2 - 2] + " " + arr1[number3]);
             }
-        } else if (numbers >= 100 && numbers < 1000) {
-            double number1 = Math.floor(numbers / 100);
-            double remain = numbers % 100;
-            double number2 = Math.floor(remain / 10);
-            double number3 = remain % 10;
-            for (int h = 0; h < arr3.length; h++) {
-                for (int g = 0; g < arr2.length; g++) {
-                    for (int k = 0; k < arr1.length; k++) {
-                        if (number1 - 1 == h && number2 - 2 == g && number3 == k) {
-                            System.out.println(arr3[h] + " and " + arr2[g] + arr1[k]);
-                        }
-                    }
-                }
+        }
+        else if(numbers>=100 && numbers<=1000){
+            int number1 = numbers/100;
+            int remainder = numbers%100;
+            int number2 = remainder/10;
+            int number3 = remainder%10;
+            if (remainder>=1 && remainder<=9){
+                System.out.println(arr3[number1-1]  + " and " + arr1[number3]);
+            } else if (remainder>=10 && remainder<=19){
+                System.out.println(arr3[number1-1]  + " and " + arr4[number3]);
+            } else if (number3 == 0){
+                System.out.println(arr3[number1-1] + " and " + arr2[number2 - 2]);
+            } else {
+                System.out.println(arr3[number1-1] + " and " + arr2[number2 -2] + arr1[number3]);
             }
-        } else {
+        }
+        else{
             System.out.println("out of ability");
         }
     }
