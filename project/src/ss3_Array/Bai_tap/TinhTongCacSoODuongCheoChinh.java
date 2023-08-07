@@ -18,12 +18,8 @@ public class TinhTongCacSoODuongCheoChinh {
         }
         int total = 0;
         for (int i = 0; i < size1; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                if (j==i){
-                    total = total + array[i][j];
+                    total = total + array[i][i];
                 }
-            }
-        }
         System.out.println("Tổng các số ở đường chéo chính là: " + total);
     }
 }

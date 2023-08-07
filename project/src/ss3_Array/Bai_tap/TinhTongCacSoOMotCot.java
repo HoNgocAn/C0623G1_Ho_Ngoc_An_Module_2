@@ -21,12 +21,8 @@ public class TinhTongCacSoOMotCot {
         System.out.println("Cột mà người dùng muốn tính tổng" );
         number = input.nextInt();
         for (int i = 0; i < size1; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                if (j==(number-1)){
-                    total = total + array[i][j];
+                    total = total + array[i][number-1];
                 }
-            }
-        }
         System.out.println("Tổng của cột: " + number + " là " + total);
     }
 }

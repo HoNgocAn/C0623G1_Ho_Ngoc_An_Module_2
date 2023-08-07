@@ -16,14 +16,14 @@ public class TimfPhanTuLonNhatTrongMang2Chieu {
                 array[i][j] = input.nextInt();
             }
         }
-        int min = array[0][0];
+        int max = array[0][0];
         for (int i = 0; i<size1; i++){
             for (int j = 0; j < array[i].length; j++){
-                if (array[i][j]<min){
-                    min = array[i][j];
+                if (array[i][j]>max){
+                    max = array[i][j];
                 }
             }
         }
-        System.out.println("Phần tử nhỏ nhất trong mảng là: " + min);
+        System.out.println("Phần tử lớn nhất trong mảng là: " + max);
     }
 }
