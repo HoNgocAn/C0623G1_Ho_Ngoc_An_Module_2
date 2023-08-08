@@ -1,4 +1,4 @@
-package ss4_Class_Object.Bai_tap;
+package ss4_Class_Object.Bai_tap.Exersise3;
 
 public class Fan {
     final int SLOW = 1;

@@ -1,4 +1,4 @@
-package ss4_Class_Object.Bai_tap;
+package ss4_Class_Object.Bai_tap.Exersise1;
 
 import ss4_Class_Object.Thuc_hanh.Rectangle;
 

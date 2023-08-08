@@ -1,4 +1,4 @@
-package ss4_Class_Object.Bai_tap;
+package ss4_Class_Object.Bai_tap.Exersise1;
 
 public class QuadraticEquation {
     private double a;
@@ -27,8 +27,6 @@ public class QuadraticEquation {
     public double getRoot1(){
         return (-this.b + Math.pow((getDiscriminant()),0.5))/(this.a*2);
     }
-    public double getRoot2(){
-
-        return (-this.b - Math.pow((getDiscriminant()),0.5))/(this.a*2);
+    public double getRoot2(){return (-this.b - Math.pow((getDiscriminant()),0.5))/(this.a*2);
     }
 }
