@@ -41,6 +41,14 @@ public class Fan {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+    public String toString() {
+        if (on) {
+            return "fan is on: " + "color " + this.getColor() + " ,radius " + this.getRadius() + " ,speed " + this.getSpeed();
+        } else {
+            return "fan is of: " + "color " + this.getColor() + " ,radius " + this.getRadius();
+        }
+
+    }
     public Fan() {
 
     }
