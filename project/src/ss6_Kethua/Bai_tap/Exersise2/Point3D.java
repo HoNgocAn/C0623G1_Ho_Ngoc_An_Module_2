@@ -7,7 +7,7 @@ public class Point3D extends Point2D{
 
     public Point3D(){
     }
-    public Point3D(int z){
+    public Point3D(float z){
         this.z = z;
     }
     public Point3D(float z, float x, float y){
@@ -21,12 +21,17 @@ public class Point3D extends Point2D{
         this.z = z;
     }
 
+
     public float[] getXYZ() {
         return arr1 = new float[]{getX(), getY(),getZ()};
     }
-
+    public void setXYZ(float x, float y, float z) {
+        this.setX(x);
+        this.setY(y);
+        this.setZ(z);
+    }
     @Override
-    public java.lang.String toString() {
+    public String toString() {
         return  "Point3D with z = " + getZ() + ", which is a subclass of " + super.toString();
     }
 }

@@ -38,8 +38,9 @@ public class Point2D {
         this.x = x;
         this.y = y;
     }
-        public String toString () {
+
+    public String toString () {
             return "Point2D with x = " + getX() + " and y = " + getY();
-        }
     }
+}
 

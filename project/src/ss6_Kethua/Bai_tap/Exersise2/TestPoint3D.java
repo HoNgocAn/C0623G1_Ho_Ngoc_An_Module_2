@@ -7,5 +7,8 @@ public class TestPoint3D {
 
         Point3D point2D1 = new Point3D(1);
         System.out.println(point2D1);
+
+        Point3D point2D2 = new Point3D(1,2,3);
+        System.out.println(point2D2);
     }
 }
