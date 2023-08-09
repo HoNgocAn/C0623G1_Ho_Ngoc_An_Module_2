@@ -1,13 +1,15 @@
 package ss6_Kethua.Bai_tap.Exersise1;
 
 public class Circle {
-    private double radius  ;
-    private String color  ;
+    private double radius ;
+    private String color ;
 
     public Circle(){
 
     }
     public Circle(double radius, String color) {
+        this.radius = radius;
+        this.color = color;
     }
 
     public double getRadius(){
