@@ -6,6 +6,9 @@ public class Cylinder extends Circle{
     public double getHeight(){
         return heigth;
     }
+    public Cylinder(){
+
+    }
     public Cylinder(double heigth){
         this.heigth = heigth;
     }
