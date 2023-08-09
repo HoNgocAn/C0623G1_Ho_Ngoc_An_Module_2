@@ -15,14 +15,14 @@ public class Point {
     public float getX() {
         return x;
     }
-    public void getX(float x){
+    public void setX(float x){
         this.x = x;
     }
     public float getY() {
 
         return y;
     }
-    public void setY(){
+    public void setY(float v){
         this.y = y;
     }
     public float [] getXY(){
@@ -34,6 +34,6 @@ public class Point {
         this.y = y;
     }
     public String toString(){
-        return "Point with x = " + getX() + "and y = " + getY();
+        return "Point with x = " + getX() + " and y = " + getY();
     }
 }
