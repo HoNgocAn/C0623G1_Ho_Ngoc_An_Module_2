@@ -26,8 +26,7 @@ public class Point3D extends Point2D{
         return arr1 = new float[]{getX(), getY(),getZ()};
     }
     public void setXYZ(float x, float y, float z) {
-        this.setX(x);
-        this.setY(y);
+        this.setXY(x,y);
         this.setZ(z);
     }
     @Override
