@@ -1,9 +1,8 @@
 package ss7_AbstractClass_interface.Bai_tap.Bai1;
 
-import ss7_AbstractClass_interface.Bai_tap.Bai2.Colorable;
 import ss7_AbstractClass_interface.Bai_tap.Bai2.Shape;
 
-public class Square extends Shape implements Colorable {
+public class Square extends Shape implements Resizeable{
     private double width;
 
     public Square() {
@@ -31,7 +30,7 @@ public class Square extends Shape implements Colorable {
     }
 
     public double getPerimeter() {
-        return getWidth() * getWidth();
+        return 2 *getWidth();
     }
 
     @Override
@@ -42,4 +41,21 @@ public class Square extends Shape implements Colorable {
 
         return "";
     }
+
+    @Override
+    public double resize() {
+        return 0;
+    }
+
+    @Override
+    public double resize(double percent) {
+
+        return percent;
+    }
+
+    @Override
+    public double getArea() {
+        return getWidth() * getWidth();
+    }
 }
+

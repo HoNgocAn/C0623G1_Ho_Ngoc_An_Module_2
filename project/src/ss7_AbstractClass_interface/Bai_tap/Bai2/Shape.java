@@ -1,6 +1,6 @@
 package ss7_AbstractClass_interface.Bai_tap.Bai2;
 
-public class Shape {
+public class Shape implements Colorable{
     private String color = "green";
     private boolean filled = true;
 
@@ -34,5 +34,10 @@ public class Shape {
                 + getColor()
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
+    }
+
+    @Override
+    public String howToColor() {
+        return null;
     }
 }

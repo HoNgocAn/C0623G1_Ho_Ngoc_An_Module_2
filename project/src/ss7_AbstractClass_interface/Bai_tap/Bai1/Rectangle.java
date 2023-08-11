@@ -2,20 +2,20 @@ package ss7_AbstractClass_interface.Bai_tap.Bai1;
 
 public class Rectangle extends Shape implements Resizeable{
     private double width = 1.0;
-    private double length = 1.0;
+    private double height = 1.0;
 
     public Rectangle() {
     }
 
     public Rectangle(double width, double length) {
         this.width = width;
-        this.length = length;
+        this.height = length;
     }
 
     public Rectangle(double width, double length, String color, boolean filled) {
         super(color, filled);
         this.width = width;
-        this.length = length;
+        this.height = height;
     }
 
     public double getWidth() {
@@ -27,26 +27,26 @@ public class Rectangle extends Shape implements Resizeable{
     }
 
     public double getLength() {
-        return length;
+        return height;
     }
 
-    public void setLength(double length) {
-        this.length = length;
+    public void setLength(double height) {
+        this.height = height;
     }
 
     public double getArea() {
-        return width * this.length;
+        return width * this.height;
     }
 
     public double getPerimeter() {
-        return 2 * (width + this.length);
+        return 2 * (width + this.height);
     }
 
     @Override
     public String toString() {
         return "A Rectangle with width="
                 + getWidth()
-                + " and length="
+                + " and height="
                 + getLength()
                 + ", which is a subclass of "
                 + super.toString();
@@ -58,8 +58,9 @@ public class Rectangle extends Shape implements Resizeable{
     }
 
     @Override
-    public void resize(double percent) {
+    public double resize(double percent) {
         System.out.println("resize= "+percent);
+        return percent;
     }
 }
 
