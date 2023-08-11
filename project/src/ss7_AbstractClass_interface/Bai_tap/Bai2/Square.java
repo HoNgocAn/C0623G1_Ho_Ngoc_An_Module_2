@@ -1,16 +1,16 @@
 package ss7_AbstractClass_interface.Bai_tap.Bai2;
 
-public class Square1 extends Shape implements Colorable {
+public class Square extends Shape implements Colorable {
     private double width;
 
-    public Square1() {
+    public Square() {
     }
 
-    public Square1(double width) {
+    public Square(double width) {
         this.width = width;
     }
 
-    public Square1(String color, boolean filled, double width) {
+    public Square(String color, boolean filled, double width) {
         super(color, filled);
         this.width = width;
     }
