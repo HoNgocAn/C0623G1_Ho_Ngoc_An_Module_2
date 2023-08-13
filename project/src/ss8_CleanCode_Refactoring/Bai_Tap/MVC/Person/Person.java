@@ -3,10 +3,10 @@ package ss8_CleanCode_Refactoring.Bai_Tap.MVC.Person;
 import java.util.Date;
 
 public class Person {
-    private int id;
-    private String name;
-    private Date dayOfBirth  ;
-    private String gender;
+    protected int id;
+    protected String name;
+    protected Date dayOfBirth  ;
+    protected String gender;
 
     public Person(){
 
