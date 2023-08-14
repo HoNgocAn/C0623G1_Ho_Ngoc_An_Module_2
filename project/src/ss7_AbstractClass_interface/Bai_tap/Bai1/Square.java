@@ -36,21 +36,13 @@ public class Square extends Shape implements Resizeable{
     @Override
     public String howToColor() {
         if(super.isFilled()) {
-            return getColor();
+            getColor();
         }
-
         return "";
     }
-
     @Override
-    public double resize() {
-        return 0;
-    }
-
-    @Override
-    public double resize(double percent) {
-
-        return percent;
+    public void resize(double percent) {
+        setWidth(getWidth() + getWidth()*percent);
     }
 
     @Override

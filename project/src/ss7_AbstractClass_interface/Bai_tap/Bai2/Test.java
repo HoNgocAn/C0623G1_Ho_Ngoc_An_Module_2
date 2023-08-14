@@ -8,14 +8,12 @@ public class Test {
         Square square3 = new Square("yellow", false, 12.0);
         shapeList[0] = square1;
         shapeList[1] = square2;
-        shapeList[2] =square3;
+        shapeList[2] = square3;
 
         for (int i = 0; i < shapeList.length; i++) {
             System.out.println("Area: " + shapeList[i].getPerimeter());
-            if (shapeList[i].isFilled()) {
                 System.out.println(shapeList[i].howToColor());
             }
 
         }
     }
-}

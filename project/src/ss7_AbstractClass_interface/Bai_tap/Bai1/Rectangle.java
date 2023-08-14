@@ -53,14 +53,9 @@ public class Rectangle extends Shape implements Resizeable{
     }
 
     @Override
-    public double resize() {
-        return 0;
-    }
-
-    @Override
-    public double resize(double percent) {
-        System.out.println("resize= "+percent);
-        return percent;
+    public void resize(double percent) {
+        setWidth(getWidth() + getWidth()*percent);
+        setLength(getLength() + getLength()*percent);
     }
 }
 

@@ -37,14 +37,8 @@ public class Shape implements Resizeable {
     }
 
     @Override
-    public double resize() {
-        return 0;
-    }
-
-    @Override
-    public double resize(double percent) {
+    public void resize(double percent) {
         System.out.println("resize= "+percent);
-        return percent;
     }
 
     @Override
