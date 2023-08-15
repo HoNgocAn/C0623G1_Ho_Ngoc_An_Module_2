@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65336bfb-2976-45b7-81cb-a0fab150f863" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ss3_Array/Bai_tap/TimGiaTriNhoNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss3_Array/Bai_tap/TimGiaTriNhoNhat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss5_Accessmodifier_staticmethod_staticproperty/Bai_tap/Exersise1/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_Accessmodifier_staticmethod_staticproperty/Bai_tap/Exersise1/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss5_Accessmodifier_staticmethod_staticproperty/Bai_tap/Exersise1/TestCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_Accessmodifier_staticmethod_staticproperty/Bai_tap/Exersise1/TestCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_Kethua/Thuc_hanh/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6_Kethua/Thuc_hanh/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_CleanCode_Refactoring/Bai_Tap/MVC/MVC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_CleanCode_Refactoring/Bai_Tap/MVC/Main/Add.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_CleanCode_Refactoring/Bai_Tap/MVC/Main/Delete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_CleanCode_Refactoring/Bai_Tap/MVC/Main/Display.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_CleanCode_Refactoring/Bai_Tap/MVC/Person/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_CleanCode_Refactoring/Bai_Tap/MVC/Person/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_CleanCode_Refactoring/Bai_Tap/MVC/Person/Teacher.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2TyY6DheiAV8jIgQZ3QpmIs3JGb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/C0623G1_Ho_Ngoc_An_Module_2/project/src"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65336bfb-2976-45b7-81cb-a0fab150f863" name="Changes" comment="" />
+      <created>1692016609529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692016609529</updated>
+      <workItem from="1692016610712" duration="37000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
