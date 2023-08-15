@@ -10,7 +10,7 @@ public class MyListTest {
         myList.add(2, "An");
 
         System.out.println(myList);
-        myList.remove(4);
+        myList.remove(1);
         System.out.println(myList);
     }
 }

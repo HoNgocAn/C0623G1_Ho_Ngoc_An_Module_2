@@ -20,7 +20,7 @@ public class MyList<E> {
         elements = new Object[capacity];
     }
     public int size (){
-        return elements.length;
+        return size;
     }
     public void add (int index, E element){
         if (index<0 || index> size()){
@@ -80,7 +80,9 @@ public class MyList<E> {
             array[i] = null;
         }
     }
-    public E get(int i) {
-        return (E) elements[i];
+    public E get(int index) {
+        if (index<0 || index>=size()) {
+            throw new IndexOutOfBoundsException();
+        } return (E) elements[index];
     }
 }
