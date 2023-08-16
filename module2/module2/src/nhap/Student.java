@@ -1,6 +1,4 @@
-package Nhap;
-
-import ss7_AbstractClass_interface.Bai_tap.Bai1.Test;
+package nhap;
 
 public class Student {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ss7_AbstractClass_interface.Bai_tap.Bai2;
+package ss7_abstractClass_interface.bai_tap.Bai2;
 
 public class Shape implements Colorable{
     private String color = "green";

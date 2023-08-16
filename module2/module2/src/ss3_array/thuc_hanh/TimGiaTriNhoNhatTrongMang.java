@@ -1,4 +1,4 @@
-package ss3_Array.Thuc_hanh;
+package ss3_array.thuc_hanh;
 
 public class TimGiaTriNhoNhatTrongMang {
     public static void main(String[] args) {

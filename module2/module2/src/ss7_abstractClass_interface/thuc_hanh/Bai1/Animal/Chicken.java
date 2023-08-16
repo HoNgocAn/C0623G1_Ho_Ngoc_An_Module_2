@@ -1,6 +1,6 @@
-package ss7_AbstractClass_interface.Thuc_hanh.Bai1.Animal;
+package ss7_abstractClass_interface.thuc_hanh.Bai1.Animal;
 
-import ss7_AbstractClass_interface.Thuc_hanh.Bai1.Edible.Edible;
+import ss7_abstractClass_interface.thuc_hanh.Bai1.Edible.Edible;
 
 public class Chicken extends Animal implements Edible {
 

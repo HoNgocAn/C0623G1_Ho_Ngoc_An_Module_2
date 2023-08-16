@@ -1,4 +1,4 @@
-package ss10_DSA_DanhSach.Thuc_hanh.Bai1;
+package ss10_dsa_danhsach.thuc_hanh.Bai1;
 
 import java.util.Arrays;
 

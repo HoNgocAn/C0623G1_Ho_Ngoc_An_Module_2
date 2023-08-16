@@ -1,4 +1,4 @@
-package Nhap;
+package nhap;
 
 public class Studen1 {
     public String name;

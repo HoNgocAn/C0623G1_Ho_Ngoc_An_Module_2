@@ -1,6 +1,6 @@
-package ss7_AbstractClass_interface.Bai_tap.Bai1;
+package ss7_abstractClass_interface.bai_tap.Bai1;
 
-import ss7_AbstractClass_interface.Bai_tap.Bai2.Shape;
+import ss7_abstractClass_interface.bai_tap.Bai2.Shape;
 
 public class Square extends Shape implements Resizeable{
     private double width;

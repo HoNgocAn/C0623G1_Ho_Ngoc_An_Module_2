@@ -1,4 +1,4 @@
-package ss6_Kethua;
+package ss6_kethua;
 
 import java.util.Scanner;
 

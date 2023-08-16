@@ -1,6 +1,4 @@
-package ss8_CleanCode_Refactoring.Bai_Tap;
-
-import java.util.Scanner;
+package ss8_cleanCode_refactoring.bai_tap;
 
 public class TennisGame {
     public static final String LOVE_ALL = "Love-All";

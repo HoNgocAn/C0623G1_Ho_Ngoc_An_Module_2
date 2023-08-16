@@ -1,4 +1,4 @@
-package ss4_Class_Object.Bai_tap.Exersise1;
+package ss4_class_object.bai_tap.Exersise1;
 
 public class QuadraticEquation {
     private double a;

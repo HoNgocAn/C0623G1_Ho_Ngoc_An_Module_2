@@ -1,4 +1,4 @@
-package ss3_Array;
+package ss3_array.thuc_hanh;
 
 import java.util.Scanner;
 

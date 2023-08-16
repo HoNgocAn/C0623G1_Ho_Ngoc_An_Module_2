@@ -1,7 +1,7 @@
-package MVC.repository.impl;
+package mvc.repository.impl;
 
-import MVC.model.Student;
-import MVC.repository.IStudentRepository;
+import mvc.model.Student;
+import mvc.repository.IStudentRepository;
 
 import java.util.ArrayList;
 import java.util.List;

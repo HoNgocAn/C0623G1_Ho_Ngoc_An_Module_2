@@ -1,4 +1,4 @@
-package ss6_Kethua.Bai_tap.Exersise2;
+package ss6_kethua.bai_tap.Exersise2;
 
 public class Point2D {
     private float x;

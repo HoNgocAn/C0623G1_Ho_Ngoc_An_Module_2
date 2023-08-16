@@ -1,4 +1,4 @@
-package ss8_CleanCode_Refactoring.Thuc_hanh;
+package ss8_cleanCode_refactoring.thuc_hanh;
 
 public class FizzBuzz {
     public static String fizzBuzz(int number){

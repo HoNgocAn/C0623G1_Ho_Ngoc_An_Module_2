@@ -14,12 +14,12 @@ public class Reverse {
 
 
         int size = stack.size();
-        Stack<Integer> Stack1 = new Stack<>();
+        Stack<Integer> stack1 = new Stack<>();
         for (int i = 0; i <size; i++) {
-            Stack1.push(stack.pop());
+            stack1.push(stack.pop());
         }
 
-        stack = Stack1;
+        stack = stack1;
         System.out.println("Mảng mới " + Arrays.toString(stack.toArray()));
     }
 }

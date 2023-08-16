@@ -1,6 +1,4 @@
-package ss4_Class_Object.Bai_tap.Exersise1;
-
-import ss4_Class_Object.Thuc_hanh.Rectangle;
+package ss4_class_object.bai_tap.Exersise1;
 
 import java.util.Scanner;
 

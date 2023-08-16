@@ -1,4 +1,4 @@
-package ss6_Kethua.Thuc_hanh;
+package ss6_kethua.thuc_hanh;
 
 public class Rectangle extends Shape{
     private double width = 1.0;

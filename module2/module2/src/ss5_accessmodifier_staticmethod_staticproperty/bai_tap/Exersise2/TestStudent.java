@@ -1,4 +1,4 @@
-package ss5_Accessmodifier_staticmethod_staticproperty.Bai_tap.Exersise2;
+package ss5_accessmodifier_staticmethod_staticproperty.bai_tap.Exersise2;
 
 public class TestStudent {
     public static void main(String[] args) {

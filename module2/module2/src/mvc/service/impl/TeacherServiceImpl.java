@@ -1,9 +1,9 @@
-package MVC.service.impl;
+package mvc.service.impl;
 
-import MVC.model.Teacher;
-import MVC.repository.ITeacherRepository;
-import MVC.repository.impl.TeacherRepositoryImpl;
-import MVC.service.ITeacherService;
+import mvc.model.Teacher;
+import mvc.repository.ITeacherRepository;
+import mvc.repository.impl.TeacherRepositoryImpl;
+import mvc.service.ITeacherService;
 
 import java.util.List;
 

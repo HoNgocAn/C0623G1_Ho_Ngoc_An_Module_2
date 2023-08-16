@@ -1,4 +1,4 @@
-package ss4_Class_Object.Bai_tap.Exersise2;
+package ss4_class_object.bai_tap.Exersise2;
 
 public class Calculate2 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ss6_Kethua.Bai_tap.Exersise3;
+package ss6_kethua.bai_tap.Exersise3;
 
 public class TestPoint {
     public static void main(String[] args) {

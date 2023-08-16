@@ -1,6 +1,6 @@
-package MVC;
+package mvc;
 
-import MVC.view.MainMenu;
+import mvc.view.MainMenu;
 
 public class Main {
     public static void main(String[] args) {

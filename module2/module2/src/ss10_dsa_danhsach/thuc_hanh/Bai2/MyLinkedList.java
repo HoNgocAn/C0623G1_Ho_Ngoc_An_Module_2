@@ -1,6 +1,4 @@
-package ss10_DSA_DanhSach.Thuc_hanh.Bai2;
-
-import org.w3c.dom.Node;
+package ss10_dsa_danhsach.thuc_hanh.Bai2;
 
 public class MyLinkedList {
     private Node head;

@@ -1,4 +1,4 @@
-package ss1_Introduction_to_java.Bai_tap;
+package ss1_introduction_to_java.bai_tap;
 
 public class Draw {
             public static void main(String[] args) {

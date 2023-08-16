@@ -1,4 +1,4 @@
-package MVC.model;
+package mvc.model;
 
 public class Student extends Person {
 

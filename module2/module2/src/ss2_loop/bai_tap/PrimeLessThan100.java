@@ -1,4 +1,4 @@
-package ss2_Loop.Bai_tap;
+package ss2_loop.bai_tap;
 
 public class PrimeLessThan100 {
         public static void main(String[] args) {

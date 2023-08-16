@@ -1,9 +1,9 @@
-package MVC.view;
+package mvc.view;
 
-import MVC.controller.StudentController;
-import MVC.controller.TeacherController;
-import MVC.model.Student;
-import MVC.model.Teacher;
+import mvc.controller.StudentController;
+import mvc.controller.TeacherController;
+import mvc.model.Student;
+import mvc.model.Teacher;
 
 import java.util.List;
 import java.util.Scanner;

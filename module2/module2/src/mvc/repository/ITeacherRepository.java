@@ -1,6 +1,6 @@
-package MVC.repository;
+package mvc.repository;
 
-import MVC.model.Teacher;
+import mvc.model.Teacher;
 
 import java.util.List;
 

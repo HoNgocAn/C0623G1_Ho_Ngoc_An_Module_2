@@ -1,4 +1,4 @@
-package ss6_Kethua.Bai_tap.Exersise1;
+package ss6_kethua.bai_tap.Exersise1;
 
 public class TestCircle {
     public static void main(String[] args) {

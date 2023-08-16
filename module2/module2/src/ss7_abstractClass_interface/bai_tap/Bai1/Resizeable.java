@@ -1,4 +1,4 @@
-package ss7_AbstractClass_interface.Bai_tap.Bai1;
+package ss7_abstractClass_interface.bai_tap.Bai1;
 
 public interface Resizeable {
 

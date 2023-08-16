@@ -1,9 +1,9 @@
-package ss10_DSA_DanhSach.Thuc_hanh.Bai1;
+package ss10_dsa_danhsach.thuc_hanh.Bai1;
 
 public class MyListTest {
     public static void main(String[] args) {
         MyList<Integer> listInteger = new MyList<Integer>();
-        listInteger.add(1);
+            listInteger.add(1);
             listInteger.add(2);
             listInteger.add(3);
             listInteger.add(4);

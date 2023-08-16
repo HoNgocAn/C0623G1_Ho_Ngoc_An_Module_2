@@ -1,8 +1,8 @@
-package MVC.controller;
+package mvc.controller;
 
-import MVC.model.Student;
-import MVC.service.IStudentService;
-import MVC.service.impl.StudentServiceImpl;
+import mvc.model.Student;
+import mvc.service.IStudentService;
+import mvc.service.impl.StudentServiceImpl;
 
 import java.util.List;
 

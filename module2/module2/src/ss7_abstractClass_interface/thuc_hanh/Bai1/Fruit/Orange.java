@@ -1,6 +1,4 @@
-package ss7_AbstractClass_interface.Thuc_hanh.Bai1.Fruit;
-
-import ss7_AbstractClass_interface.Thuc_hanh.Bai1.Fruit.Fruit;
+package ss7_abstractClass_interface.thuc_hanh.Bai1.Fruit;
 
 public class Orange extends Fruit {
     @Override

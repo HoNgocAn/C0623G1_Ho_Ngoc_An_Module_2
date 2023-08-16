@@ -1,6 +1,6 @@
-package MVC.service;
+package mvc.service;
 
-import MVC.model.Student;
+import mvc.model.Student;
 
 import java.util.List;
 

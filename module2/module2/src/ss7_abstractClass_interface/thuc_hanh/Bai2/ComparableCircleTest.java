@@ -1,4 +1,4 @@
-package ss7_AbstractClass_interface.Thuc_hanh.Bai2;
+package ss7_abstractClass_interface.thuc_hanh.Bai2;
 
 import java.util.Arrays;
 

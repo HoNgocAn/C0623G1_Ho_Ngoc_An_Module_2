@@ -1,7 +1,7 @@
-package MVC.repository.impl;
+package mvc.repository.impl;
 
-import MVC.model.Teacher;
-import MVC.repository.ITeacherRepository;
+import mvc.model.Teacher;
+import mvc.repository.ITeacherRepository;
 
 import java.util.ArrayList;
 import java.util.List;

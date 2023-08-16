@@ -1,8 +1,8 @@
-package MVC.controller;
+package mvc.controller;
 
-import MVC.model.Teacher;
-import MVC.service.ITeacherService;
-import MVC.service.impl.TeacherServiceImpl;
+import mvc.model.Teacher;
+import mvc.service.ITeacherService;
+import mvc.service.impl.TeacherServiceImpl;
 
 import java.util.List;
 
