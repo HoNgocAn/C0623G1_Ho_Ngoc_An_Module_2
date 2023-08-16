@@ -5,11 +5,11 @@ import java.util.Stack;
 
 public class Convert {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         Stack stack = new Stack<>();
         System.out.println("Nhập số cần chuyển");
-        int binary =  scanner.nextInt();
+        int binary =  input.nextInt();
         int quotient;
         do {
             quotient = binary%2;

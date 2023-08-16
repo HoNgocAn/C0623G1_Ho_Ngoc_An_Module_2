@@ -6,12 +6,13 @@ import java.util.TreeMap;
 
 public class Count {
     public static void main(String[] args) {
-        String st1= "không đi cũng không sao";
-        String[] arrST= st1.split(" ");
+        String st1= "khÔng Đi Cũng KhônG sAo";
+        String[] arr= st1.split(" ");
+        System.out.println("Chuỗi mới "+ st1.toUpperCase());
 
         Map<String,Integer> map = new TreeMap<String,Integer>();
 
-        for (String s:arrST) {
+        for (String s:arr) {
             if(map.containsKey(s)){
                 Integer value = map.get(s);
                 value++;

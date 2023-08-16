@@ -5,21 +5,21 @@ import java.util.Stack;
 
 public class Reverse {
     public static void main(String[] args) {
-        Stack<Integer> wStack = new Stack<>();
-        wStack.push(1);
-        wStack.push(2);
-        wStack.push(3);
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
 
-        System.out.println("Mảng cũ " + Arrays.toString(wStack.toArray()));
+        System.out.println("Mảng cũ " + Arrays.toString(stack.toArray()));
 
 
-        int size = wStack.size();
-        Stack<Integer> listPopStack = new Stack<>();
+        int size = stack.size();
+        Stack<Integer> Stack1 = new Stack<>();
         for (int i = 0; i <size; i++) {
-            listPopStack.push(wStack.pop());
+            Stack1.push(stack.pop());
         }
 
-        wStack = listPopStack;
-        System.out.println("Mảng mới " + Arrays.toString(wStack.toArray()));
+        stack = Stack1;
+        System.out.println("Mảng mới " + Arrays.toString(stack.toArray()));
     }
 }

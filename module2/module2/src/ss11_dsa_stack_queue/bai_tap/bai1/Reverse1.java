@@ -12,9 +12,8 @@ public class Reverse1 {
 
         System.out.println("Mảng cũ " + Arrays.toString(stack.toArray()));
 
-        Stack newStack = new Stack<>();
-
         int size = stack.size();
+        Stack newStack = new Stack<>();
         for (int i = 0; i < size; i++) {
             newStack.push(stack.pop());
         }
