@@ -3,16 +3,49 @@ package ss11_dsa_stack_queue.bai_tap.bai5;
 import java.util.Stack;
 
 public class Check {
-    public String[] stringToArray(String string){
-        String[] arrayString = string.split("");
-        return arrayString;
+    public static void main(String[] args) {
+        String string = "s * (s – a) * (s – b) * (s – c)  ";
+        getResultCheckBracket(string);
+        String string1 = "s * (s – a) * (s – b) * (s – c)))  ";
+        getResultCheckBracket(string1);
     }
 
-    public boolean checkTheKeyTag(String string) {
-        String[] arrayString = stringToArray(string);
+    public static String[] stringToArray(String string) {
+        String[] strings = string.split("");
+        return strings;
+    }
+
+    public static boolean checkBracket(String string) {
+        String[] strings = stringToArray(string);
+
         Stack bStack = new Stack<>();
         Stack sym = new Stack<>();
         Stack left = new Stack<>();
-        return false;
+        for (int i = 0; i < strings.length; i++) {
+            if (strings[i].equals("(")) {
+                bStack.push(strings[i]);
+                sym.push(strings[i]);
+            } else if (strings[i].equals(")")) {
+                if (bStack.isEmpty()) {
+                    return false;
+                } else {
+                    left.push(bStack.pop());
+                }
+            }
+        }
+        if (sym.equals(left)) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    public static void getResultCheckBracket(String string) {
+        if (checkBracket(string)) {
+            System.out.println("Bracket is well.");
+        } else {
+            System.out.println("Bracket is not good.");
+        }
     }
 }
