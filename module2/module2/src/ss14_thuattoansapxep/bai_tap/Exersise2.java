@@ -31,7 +31,7 @@ public class Exersise2 {
         }
         System.out.print("List after sort is ");
         for (int j = 0; j < list.length; j++) {
-            System.out.print(list[j] + " ");
+            System.out.print(list[j] + " ");s
         }
     }
 }
