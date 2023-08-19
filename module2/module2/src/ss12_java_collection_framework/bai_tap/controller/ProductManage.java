@@ -18,6 +18,15 @@ public class ProductManage {
     public void addProduct(Product product){
         this.list.add(product);
     }
+    public void updateProduct(Product product){
+        for (Product pr : list) {
+            if(pr.getId()== product.getId());{
+                pr.setName(product.getName());
+                pr.setPrice(product.getPrice());
+                return;
+            }
+        }
+    }
     public void printProductManage() {
         for (Product pr : list) {
             System.out.println(pr);

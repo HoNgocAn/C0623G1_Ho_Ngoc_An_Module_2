@@ -12,7 +12,7 @@ public class BubbleSortByStep {
             System.out.print("Enter element ");
             list[i] = input.nextInt();
         }
-        System.out.println("List is");
+        System.out.println("List before sort is: ");
         for (int j = 0; j < list.length; j++) {
             System.out.print(list[j] + " ");
         }
@@ -29,7 +29,7 @@ public class BubbleSortByStep {
                 }
             }
         }
-        System.out.println("list after sort: ");
+        System.out.println("list after sort is: ");
         for (int h = 0; h < list.length; h++) {
             System.out.print(list[h]+ " ");
         }

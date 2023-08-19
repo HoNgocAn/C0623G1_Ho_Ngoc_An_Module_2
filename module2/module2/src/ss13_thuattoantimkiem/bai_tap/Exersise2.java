@@ -15,7 +15,7 @@ public class Exersise2 {
         }
         Arrays.sort(arr);
 
-        
+
         System.out.println("Array whose elements are ");
         for (int i = 0; i < size; i++) {
             System.out.print(arr[i] + " ");

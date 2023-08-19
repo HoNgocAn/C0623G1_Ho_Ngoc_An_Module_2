@@ -21,14 +21,18 @@ public class View {
             System.out.println("6.Sắp xếp sản phẩm theo giá");
             System.out.println("0. Thoát khỏi chương trình");
             choice = sc.nextInt();
+            sc.nextLine();
             if (choice==1){
                 System.out.println("Nhập id sản phẩm"); int id = sc.nextInt();
+                sc.nextLine();
                 System.out.println("Nhập tên sản phẩm"); String name = sc.nextLine();
                 System.out.println("Nhập giá sản phẩm"); double price = sc.nextDouble();
                 Product product = new Product(id,name,price);
                 pro.addProduct(product);
             } else if(choice==2){
-                
+                System.out.println("Nhâp id sản phẩm"); int id = sc.nextInt();
+                Product product = new Product(id);
+                pro.updateProduct(product);
             } else if (choice==3) {
                 System.out.println("Nhâp id sản phẩm"); int id = sc.nextInt();
                 Product product = new Product(id);

@@ -25,7 +25,7 @@ public class Exersise1 {
         //Chạy vòng 1 lặp bắt đầu từ vị trị i=1
         for (int i = 1; i < list.length; i++) {
             int j = i;
-            // Chạy vòng lặp 2 bắt đầu ở vị trí j=i, so sánh phần tử ở vị trí j và j-1, nếu phần tử ở vị trị j nhỏ hơn thì
+            // Chạy vòng lặp 2 bắt đầu ở vị trí j=i, so sánh phần tử ở vị trí j với các phần tử ở trước nó, nếu phần tử ở vị trị j nhỏ hơn thì
             // đổi chổ 2 phần tử với nhau. Tiếp tục vòng lặp cho đến khi hết không còn thỏa mãn điều kiện.
             while (j>0 && list[j]<list[j-1]){
                 int tempt = list[j];
