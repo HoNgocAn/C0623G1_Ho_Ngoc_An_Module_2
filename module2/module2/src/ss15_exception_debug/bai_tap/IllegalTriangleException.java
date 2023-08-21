@@ -22,7 +22,7 @@ public class IllegalTriangleException {
                 System.out.println("Đây là 3 cạnh của một tam giác");
                 }
                 } catch (Exception e) {
-                    System.out.println("Đề nghị nhập đúng định dạng");
+                System.err.println("Lỗi " + e.getMessage() + " .Đề nghị nhập đúng định dạng");
                     break;
                 }
         }while (a <= 0 || b <= 0 || c <= 0 || (a+b)<=c || (a+c)<=b || (b+c)<=a ) ;
