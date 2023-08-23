@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        String csvFile = "D:/C0623G1_Ho_Ngoc_An_Module2/module2/module2/src/ss16_io_text_file/bai_tap/bai2/Countries.csv";
+        String csvFile = "D:\\C0623G1_Ho_Ngoc_An_Module_2\\module2\\module2\\src\\ss16_io_text_file\\bai_tap\\bai2\\Countries.csv";
         File file = new File(csvFile);
         String line = "";
         try(BufferedReader br = new BufferedReader(new FileReader(csvFile)))
