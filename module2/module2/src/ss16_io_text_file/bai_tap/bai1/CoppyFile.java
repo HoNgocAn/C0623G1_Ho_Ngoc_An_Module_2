@@ -4,11 +4,10 @@ import java.io.*;
 
 public class CoppyFile {
     public static void main(String[] args) {
-        String sourceFilePath = "D:\\C0623G1_Ho_Ngoc_An_Module_2\\module2\\module2\\src\\ss16_io_text_file\\bai_tap\\bai1\\source";
-        String targetFilePath = "D:\\C0623G1_Ho_Ngoc_An_Module_2\\module2\\module2\\src\\ss16_io_text_file\\bai_tap\\bai1\\target";
+        String source = "D:\\C0623G1_Ho_Ngoc_An_Module_2\\module2\\module2\\src\\ss16_io_text_file\\bai_tap\\bai1\\source";
+        String target = "D:\\C0623G1_Ho_Ngoc_An_Module_2\\module2\\module2\\src\\ss16_io_text_file\\bai_tap\\bai1\\target";
         try {
-
-            FileReader sourceFileReader = new FileReader(sourceFilePath);
+            FileReader sourceFileReader = new FileReader(source);
             StringBuilder content = new StringBuilder();
             int character;
             while ((character = sourceFileReader.read()) != -1) {
@@ -16,7 +15,7 @@ public class CoppyFile {
             }
             sourceFileReader.close();
 
-            FileWriter targetFileWriter = new FileWriter(targetFilePath);
+            FileWriter targetFileWriter = new FileWriter(target);
             targetFileWriter.write(content.toString());
             targetFileWriter.close();
 
