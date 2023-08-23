@@ -8,8 +8,6 @@ public class IllegalTriangleException {
         double a = 0;
         double b = 0;
         double c = 0;
-        do {
-            System.out.println("Đây không phải là 3 cạnh của tam giác. Đề nghị nhập lại");
             do {
                 try {
                     System.out.println("Nhập cạnh a");
@@ -46,8 +44,15 @@ public class IllegalTriangleException {
                     break;
                 }
             } while (c <= 0);
+            check(a,b,c);
+        }
+
+       static void  check(double a, double b, double c) {
+        if((a + b <= c || a + c <= b || b + c<=a)){
+               System.out.println("Đây không phải là 3 cạnh của tam giác. Đề nghị nhập lại");
+        }else {
             System.out.println("Đây là 3 cạnh của tam giác");
-        }while (a + b <= c || a + c <= b || b + c <= a);
+        }
     }
 }
 
