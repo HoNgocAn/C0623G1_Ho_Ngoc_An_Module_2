@@ -13,11 +13,11 @@ public class Exersise1 {
         int [] list = new int [size];
         //Nhập các phần tử là số nguyên vào mảng
         for (int i = 0; i < size; i++) {
-            System.out.print("Enter element: ");
+            System.out.print("Enter element: " );
             list[i] = input.nextInt();
         }
         //Hiển thị mảng trước khi sắp xếp
-        System.out.println("List before sort is " + Arrays.toString(list));
+        System.out.println("Array before sort is " + Arrays.toString(list));
         //Gọi phương thức insertionSort và quan sát kết quả.
         insertionSort(list);
     }
@@ -35,6 +35,6 @@ public class Exersise1 {
             }
         }
         //In ra mảng sau khi đã đổi chỗ
-        System.out.println("List after sort is " + Arrays.toString(list));
+        System.out.println("Array after sort is " + Arrays.toString(list));
     }
 }

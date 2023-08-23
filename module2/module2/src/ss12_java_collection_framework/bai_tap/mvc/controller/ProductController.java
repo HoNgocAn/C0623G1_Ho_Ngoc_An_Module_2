@@ -1,9 +1,8 @@
-package ss12_java_collection_framework.bai_tap.MVC.controller;
-
-import ss12_java_collection_framework.bai_tap.MVC.service.IProductService;
+package ss12_java_collection_framework.bai_tap.mvc.controller;
 import ss12_java_collection_framework.bai_tap.model.Product;
+import ss12_java_collection_framework.bai_tap.mvc.service.impl.IProductService;
 
-public class ProductManage {
+public class ProductController {
     private final IProductService productService = new IProductService() {
         @Override
         public void addProduct(Product product) {
@@ -36,3 +35,5 @@ public class ProductManage {
         }
     };
 }
+
+

@@ -1,7 +1,8 @@
-package ss12_java_collection_framework.bai_tap.MVC.repository;
+package ss12_java_collection_framework.bai_tap.mvc.repository.impl;
 
 
 import ss12_java_collection_framework.bai_tap.model.Product;
+import ss12_java_collection_framework.bai_tap.mvc.repository.impl.IProductRepository;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,7 +14,7 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public void addProduct(Product product) {
-            this.list.add(product);
+        this.list.add(product);
     }
 
     @Override
@@ -59,5 +60,3 @@ public class ProductRepository implements IProductRepository {
 
     }
 }
-
-

@@ -1,11 +1,9 @@
-package ss12_java_collection_framework.bai_tap.MVC.service.impl;
+package ss17_io_binaryfile_serialization.bai_tap.coppy_file.mvc.service.impl;
 
-import ss12_java_collection_framework.bai_tap.MVC.repository.IProductRepository;
-import ss12_java_collection_framework.bai_tap.MVC.repository.ProductRepository;
-import ss12_java_collection_framework.bai_tap.MVC.service.IProductService;
 import ss12_java_collection_framework.bai_tap.model.Product;
-
-import java.util.List;
+import ss17_io_binaryfile_serialization.bai_tap.coppy_file.mvc.repository.IProductRepository;
+import ss17_io_binaryfile_serialization.bai_tap.coppy_file.mvc.repository.impl.ProductRepository;
+import ss17_io_binaryfile_serialization.bai_tap.coppy_file.mvc.service.IProductService;
 
 public class ProductService implements IProductService {
     private final IProductRepository productRepository = new ProductRepository();

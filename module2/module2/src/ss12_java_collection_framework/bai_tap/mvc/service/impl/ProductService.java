@@ -1,11 +1,9 @@
-package ss12_java_collection_framework.bai_tap.MVC.service.impl;
+package ss12_java_collection_framework.bai_tap.mvc.service.impl;
 
-import ss12_java_collection_framework.bai_tap.MVC.repository.IProductRepository;
-import ss12_java_collection_framework.bai_tap.MVC.repository.ProductRepository;
-import ss12_java_collection_framework.bai_tap.MVC.service.IProductService;
 import ss12_java_collection_framework.bai_tap.model.Product;
-
-import java.util.List;
+import ss12_java_collection_framework.bai_tap.mvc.repository.impl.IProductRepository;
+import ss12_java_collection_framework.bai_tap.mvc.repository.impl.ProductRepository;
+import ss12_java_collection_framework.bai_tap.mvc.service.impl.IProductService;
 
 public class ProductService implements IProductService {
     private final IProductRepository productRepository = new ProductRepository();

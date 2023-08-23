@@ -1,14 +1,14 @@
-package ss12_java_collection_framework.bai_tap.model;
+package ss12_java_collection_framework.bai_tap.mvc.model;
 
 public class Product {
     private int id;
     private String name;
     private double price;
 
-    public Product(int id){
+    public Product(){
 
     }
-    public Product(int id,String name, double price){
+    public Product(int id, String name, double price){
         this.id = id;
         this.name = name;
         this. price = price;

@@ -31,11 +31,11 @@ public class View {
                 pro.addProduct(product);
             } else if(choice==2){
                 System.out.println("Nhâp id sản phẩm"); int id = sc.nextInt();
-                Product product = new Product(id);
+                Product product = new Product();
                 pro.updateProduct(product);
             } else if (choice==3) {
                 System.out.println("Nhâp id sản phẩm"); int id = sc.nextInt();
-                Product product = new Product(id);
+                Product product = new Product();
                 pro.deleteProduct(product);
             } else if (choice==4) {
                 pro.printProductManage();

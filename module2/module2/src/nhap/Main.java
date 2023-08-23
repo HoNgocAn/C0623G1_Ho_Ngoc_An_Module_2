@@ -1,16 +1,40 @@
 package nhap;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Main {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int[] arr = {1,2,3,4,5};
-        for (int a:arr) {
-            System.out.print(a);
-        }
+    protected String name;
+    private int age;
+    private float weight;
+    private String color;
+    private String eyesColor;
+
+    public Main (String name){
+        this.name = name;
     }
+    public Main(String name, int age, float weight, String color){
+        this(name);
+
+    }
+    public  String getName(){
+       return name ;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+    public void speak(){
+
+    }
+    public void move(){
+        System.out.println(name + " is running");
+
+    }
+    public void sleep(){
+
+    }
+    public void eat(){
+        System.out.println(name + " eat fish");
+    }
+
 }
 
 
