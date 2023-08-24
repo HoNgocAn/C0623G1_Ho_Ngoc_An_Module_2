@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class Numbersphone {
     private static Pattern pattern;
     private Matcher matcher;
-    private static final String NUMBERSPHONE = "^\\d{2}[-][0-9]+$";
+    private static final String NUMBERSPHONE = "^\\d{2}[-][0][0-9]+$";
     public Numbersphone(){
         pattern = Pattern.compile(NUMBERSPHONE);
     }
