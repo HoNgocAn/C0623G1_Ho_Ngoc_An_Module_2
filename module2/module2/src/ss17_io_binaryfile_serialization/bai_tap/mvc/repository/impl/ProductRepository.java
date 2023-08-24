@@ -4,6 +4,7 @@ package ss17_io_binaryfile_serialization.bai_tap.coppy_file.mvc.repository.impl;
 import ss12_java_collection_framework.bai_tap.model.Product;
 import ss17_io_binaryfile_serialization.bai_tap.coppy_file.mvc.repository.IProductRepository;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -21,7 +22,9 @@ public class ProductRepository implements IProductRepository {
     public void updateProduct(Product product) {
         for (Product pr : list) {
             if(pr.getId()== product.getId());{
+                System.out.println("Enter Name");
                 pr.setName(product.getName());
+                System.out.println("Enter price");
                 pr.setPrice(product.getPrice());
                 return;
             }

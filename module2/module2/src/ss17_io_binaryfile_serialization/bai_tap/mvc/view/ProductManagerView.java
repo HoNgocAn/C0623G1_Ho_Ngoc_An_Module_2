@@ -6,7 +6,7 @@ import ss12_java_collection_framework.bai_tap.model.Product;
 import java.util.Scanner;
 
 public class ProductManagerView {
-    public static void main(String[] args) {
+    public void run() {
         Scanner sc = new Scanner(System.in);
         ProductManage pro = new ProductManage();
         int choice = 0;
