@@ -23,8 +23,8 @@ public class EmployeeService implements IEmployeeService {
     }
 
     @Override
-    public void deleteEmployee(String name) {
-        this.employeeRepository.deleteEmployee(name);
+    public void deleteEmployee(int id) {
+        this.employeeRepository.deleteEmployee(id);
     }
 
     @Override

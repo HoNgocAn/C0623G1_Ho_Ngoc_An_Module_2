@@ -4,16 +4,19 @@ public abstract class Person {
     private String code;
     private String name;
     private String dateOfBirth;
+
+    private String gender;
     private int id;
     private int numbersPhone;
     private String email;
     public Person(){
 
     }
-    public Person(String code, String name, String dateOfBirth, int id, int numbersPhone, String email) {
+    public Person(String code, String name, String dateOfBirth, String gender, int id, int numbersPhone, String email) {
         this.code = code;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
         this.id = id;
         this.numbersPhone = numbersPhone;
         this.email = email;
@@ -39,8 +42,13 @@ public abstract class Person {
         return dateOfBirth;
     }
 
+
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
+    }
+    public String getGender(){return gender;}
+    public void setGender(String gender){
+        this.gender = gender;
     }
 
     public int getId() {
@@ -73,9 +81,9 @@ public abstract class Person {
                 "code='" + code + '\'' +
                 ", name='" + name + '\'' +
                 ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", gender='" + gender + '\'' +
                 ", id=" + id +
                 ", numbersPhone=" + numbersPhone +
-                ", email='" + email + '\''
-                ;
+                ", email='" + email + '\'';
     }
 }

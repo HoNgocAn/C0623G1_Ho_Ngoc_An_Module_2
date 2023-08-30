@@ -2,20 +2,20 @@ package casestudy.model.Person;
 
 public class Customer extends Person{
     private String typeOfQuest;
-    private String adresss;
+    private String adress;
     public Customer(){
 
     }
 
-    public Customer(String typeOfQuest, String adresss) {
+    public Customer(String typeOfQuest, String adress) {
         this.typeOfQuest = typeOfQuest;
-        this.adresss = adresss;
+        this.adress = adress;
     }
 
-    public Customer(String code, String name, String dateOfBirth, int id, int numbersPhone, String email, String typeOfQuest, String adresss) {
-        super(code, name, dateOfBirth, id, numbersPhone, email);
+    public Customer(String code, String name, String dateOfBirth, String gender, int id, int numbersPhone, String email, String typeOfQuest, String adress) {
+        super(code, name, dateOfBirth, gender, id, numbersPhone, email);
         this.typeOfQuest = typeOfQuest;
-        this.adresss = adresss;
+        this.adress = adress;
     }
 
     public String getTypeOfQuest() {
@@ -26,19 +26,19 @@ public class Customer extends Person{
         this.typeOfQuest = typeOfQuest;
     }
 
-    public String getAdresss() {
-        return adresss;
+    public String getAdress() {
+        return adress;
     }
 
-    public void setAdresss(String adresss) {
-        this.adresss = adresss;
+    public void setAdress(String adress) {
+        this.adress = adress;
     }
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "Customer {" + super.toString()+
                 "typeOfQuest='" + typeOfQuest + '\'' +
-                ", adresss='" + adresss + '\'' +
-                "} " + super.toString();
+                ", adress='" + adress + '\'' +
+                "} ";
     }
 }

@@ -9,9 +9,7 @@ public class EmployeeController {
     public void printEmployee(){this.employeeService.printEmployee();}
     public void addEmployee(Employee employee){this.employeeService.addEmployee(employee);}
     public void editEmployee(Employee employee){this.employeeService.editEmployee(employee);}
-    public void deleteEmployee(String name){this.employeeService.deleteEmployee(name);}
-    public void findEmployee(String name){this.findEmployee(name);}
+    public void deleteEmployee(int id){this.employeeService.deleteEmployee(id);}
+    public void findEmployee(String name1){this.employeeService.findEmployee(name1);}
 
-    public void printEmployee(String name1) {
-    }
 }

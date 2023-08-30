@@ -23,26 +23,31 @@ public class EmployeeRepository implements IEmployeeRepository {
     @Override
     public void editEmployee(Employee employee) {
         for (Employee e : list) {
-            if (e.getName()==employee.getName()){
+            if (e.getId()==employee.getId()){
                 e.setCode(employee.getCode());
+                e.setName(employee.getName());
                 e.setDateOfBirth(employee.getDateOfBirth());
-                e.setId(employee.getId());
+                e.setGender(employee.getGender());
                 e.setNumbersPhone(employee.getNumbersPhone());
                 e.setEmail(employee.getEmail());
                 e.setLevel(employee.getLevel());
                 e.setTitle(employee.getTitle());
                 e.setSalary(employee.getSalary());
                 return;
+            }else{
+                System.out.println("Không tìm thấy nhân viên cần sửa thông tin");
             }
         }
     }
 
     @Override
-    public void deleteEmployee(String name) {
+    public void deleteEmployee(int id) {
         for (Employee e : list) {
-            if (e.getName()==name){
+            if (e.getId()==id){
                 this.list.remove(e);
                 return;
+            } else {
+                System.out.println("Không tìm thấy nhân viên cần xóa");
             }
         }
 
@@ -51,8 +56,10 @@ public class EmployeeRepository implements IEmployeeRepository {
     @Override
     public void findEmployee(String name) {
         for(Employee e: list){
-            if(e.getName().indexOf(name)>0){
+            if(e.getName().equals(name)){
                 System.out.println(e);
+            }else {
+                System.out.println("Không tìm thấy nhân viên cần tìm kiếm");
             }
         }
     }

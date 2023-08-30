@@ -4,20 +4,23 @@ public class Employee extends Person{
     private String level;
     private String title;
     private double salary;
-    public Employee(){
 
-    }
     public Employee(String level, String title, double salary) {
         this.level = level;
         this.title = title;
         this.salary = salary;
     }
 
-    public Employee(String code, String name, String dateOfBirth, int id, int numbersPhone, String email, String level, String title, double salary) {
-        super(code, name, dateOfBirth, id, numbersPhone, email);
+    public Employee(String code, String name, String dateOfBirth, String gender, int id, int numbersPhone, String email, String level, String title , double salary) {
+        super(code, name, dateOfBirth, gender, id, numbersPhone, email);
         this.level = level;
         this.title = title;
         this.salary = salary;
+
+    }
+
+    public Employee() {
+
     }
 
     public String getLevel() {
@@ -46,8 +49,8 @@ public class Employee extends Person{
 
     @Override
     public String toString() {
-        return  "Employee " + super.toString() + "level='" + level + '\'' +
+        return  "Employee {" + super.toString() + "level='" + level + '\'' +
                 ", title='" + title + '\'' +
-                ", salary=" + salary ;
+                ", salary=" + salary + "}";
     }
 }
