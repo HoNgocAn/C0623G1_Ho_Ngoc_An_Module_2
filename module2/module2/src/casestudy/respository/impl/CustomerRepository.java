@@ -1,13 +1,17 @@
 package casestudy.respository.impl;
 
+import casestudy.Utils.FileUtils;
 import casestudy.model.Person.Customer;
 import casestudy.model.Person.Employee;
 import casestudy.respository.ICustomerRepository;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomerRepository implements ICustomerRepository {
     private final ArrayList<Customer> list = new ArrayList<>();
+    private static final String COMMA = ",";
+    private static final String PATH_NAME = "D:\\C0623G1_Ho_Ngoc_An_Module_2\\module2\\module2\\src\\casestudy\\Data\\Customer.csv";
     @Override
     public void printCustomer() {
         for (Customer c: list) {
@@ -19,6 +23,7 @@ public class CustomerRepository implements ICustomerRepository {
     @Override
     public void addCustomer(Customer customer) {
         this.list.add(customer);
+        FileUtils.writeFile(PATH_NAME,convertToString(list));
     }
 
     @Override
@@ -43,6 +48,7 @@ public class CustomerRepository implements ICustomerRepository {
         } else {
             System.out.println("Đã sửa thông tin khách hàng");
         }
+        FileUtils.writeFile(PATH_NAME,convertToString(list));
     }
 
     @Override
@@ -59,6 +65,7 @@ public class CustomerRepository implements ICustomerRepository {
         } else {
             System.out.println("Đã xóa khách hàng");
         }
+        FileUtils.writeFile(PATH_NAME,convertToString(list));
     }
 
     @Override
@@ -75,5 +82,41 @@ public class CustomerRepository implements ICustomerRepository {
         } else {
             System.out.println("Đã tìm thấy khách hàng cần tìm");
         }
+    }
+    public List<Employee> convertToEmployee() {
+        List<Employee> customerList = new ArrayList<>();
+        List<String> stringList = FileUtils.readFile(PATH_NAME);
+        String[] array;
+        for (String employee : stringList) {
+            array = employee.split(COMMA);
+            customerList.add(new Employee(
+                    array[0],
+                    array[1],
+                    array[2],
+                    array[3],
+                    Integer.parseInt(array[4]),
+                    Integer.parseInt(array[5]),
+                    array[6],
+                    array[7],
+                    array[8],
+                    Double.parseDouble(array[9])));
+        }
+        return customerList;
+    }
+
+    public List<String> convertToString(ArrayList<Customer> employeeList) {
+        List<String> customerStringList = new ArrayList<>();
+        for (Customer customer: employeeList) {
+            customerStringList.add(customer.getCode() + COMMA +
+                    customer.getName() + COMMA +
+                    customer.getDateOfBirth() + COMMA +
+                    customer.getGender() + COMMA +
+                    customer.getId() + COMMA +
+                    customer.getNumbersPhone() + COMMA +
+                    customer.getEmail() + COMMA +
+                    customer.getTypeOfQuest() + COMMA +
+                    customer.getAdress() + COMMA);
+        }
+        return customerStringList;
     }
 }

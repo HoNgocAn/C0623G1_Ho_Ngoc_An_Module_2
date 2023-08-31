@@ -36,13 +36,12 @@ public class FuramaView {
                 customerManagementMenu();
                 break;
             case 3:
-                this.inputFacilityManagement();
+
                 break;
             case 4:
-                this.inputBookingManagerment();
+
                 break;
             case 5:
-                this.inputPromotionManagement();
                 break;
             case 6:
                 System.exit(option);
@@ -122,75 +121,6 @@ public class FuramaView {
         System.out.println("3. Return main menu");
     }
 
-    private int inputEmployeeManagement() {
-        int option1 = 0;
-        do {
-            try {
-                this.employeeManagement();
-                System.out.println("Mời bạn chọn chức năng ");
-                option1 = Integer.parseInt(scanner.nextLine());
-            } catch (Exception ex) {
-                System.out.println("Dữ liệu bạn nhập bị sai");
-            }
-        } while (option1 <= 0 || option1 > 6);
-        return option1;
-    }
-
-    private int inputCustomerManagement() {
-        int option2 = 0;
-        do {
-            try {
-                this.customerManagement();
-                System.out.println("Mời bạn chọn chức năng ");
-                option2 = Integer.parseInt(scanner.nextLine());
-            } catch (Exception ex) {
-                System.out.println("Dữ liệu bạn nhập bị sai");
-            }
-        } while (option2 <= 0 || option2 > 6);
-        return option2;
-    }
-
-    private int inputFacilityManagement() {
-        int option3 = 0;
-        do {
-            try {
-                this.facilityManagement();
-                System.out.println("Mời bạn chọn chức năng ");
-                option3 = Integer.parseInt(scanner.nextLine());
-            } catch (Exception ex) {
-                System.out.println("Dữ liệu bạn nhập bị sai");
-            }
-        } while (option3 <= 0 || option3 > 5);
-        return option3;
-    }
-
-    private int inputBookingManagerment() {
-        int option4 = 0;
-        do {
-            try {
-                this.bookingManagerment();
-                System.out.println("Mời bạn chọn chức năng ");
-                option4 = Integer.parseInt(scanner.nextLine());
-            } catch (Exception ex) {
-                System.out.println("Dữ liệu bạn nhập bị sai");
-            }
-        } while (option4 <= 0 || option4 > 6);
-        return option4;
-    }
-
-    private int inputPromotionManagement() {
-        int option5 = 0;
-        do {
-            try {
-                this.promotionManagement();
-                System.out.println("Mời bạn chọn chức năng ");
-                option5 = Integer.parseInt(scanner.nextLine());
-            } catch (Exception ex) {
-                System.out.println("Dữ liệu bạn nhập bị sai");
-            }
-        } while (option5 <= 0 || option5 > 3);
-        return option5;
-    }
 
     public void employeeManagementMenu() {
         int option1 ;

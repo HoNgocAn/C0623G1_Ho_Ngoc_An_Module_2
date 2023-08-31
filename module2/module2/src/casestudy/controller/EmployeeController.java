@@ -10,6 +10,6 @@ public class EmployeeController {
     public void addEmployee(Employee employee){this.employeeService.addEmployee(employee);}
     public void editEmployee(Employee employee){this.employeeService.editEmployee(employee);}
     public void deleteEmployee(int id){this.employeeService.deleteEmployee(id);}
-    public void findEmployee(String name1){this.employeeService.findEmployee(name1);}
+    public void findEmployee(String name){this.employeeService.findEmployee(name);}
 
 }
