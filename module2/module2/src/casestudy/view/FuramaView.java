@@ -14,7 +14,6 @@ public class FuramaView {
     private final Scanner scanner = new Scanner(System.in);
     private String code;
     private String name;
-    private String name1;
     private String dateOfBirth;
     private String gender;
     private int id;
@@ -27,9 +26,9 @@ public class FuramaView {
     private String adress;
 
 
-    public void run(){
+    public void run() {
         int option = this.intMainMenu();
-        switch (option){
+        switch (option) {
             case 1:
                 employeeManagementMenu();
                 break;
@@ -43,7 +42,7 @@ public class FuramaView {
                 this.inputBookingManagerment();
                 break;
             case 5:
-                this.inputPromotionManagement() ;
+                this.inputPromotionManagement();
                 break;
             case 6:
                 System.exit(option);
@@ -52,7 +51,8 @@ public class FuramaView {
                 break;
         }
     }
-    private void displayMainMenu(){
+
+    private void displayMainMenu() {
         System.out.println("----MainMenu----");
         System.out.println("1. Employee Management");
         System.out.println("2. Customer Management");
@@ -61,6 +61,7 @@ public class FuramaView {
         System.out.println("5. Promotion Management");
         System.out.println("6. Exit");
     }
+
     private int intMainMenu() {
         int option = 0;
         do {
@@ -74,7 +75,8 @@ public class FuramaView {
         } while (option <= 0 || option > 6);
         return option;
     }
-    private void employeeManagement(){
+
+    void employeeManagement() {
         System.out.println("----employeeManagement----");
         System.out.println("1 Display list employees");
         System.out.println("2 Add new employee");
@@ -83,7 +85,8 @@ public class FuramaView {
         System.out.println("5 Search by name employee");
         System.out.println("6 Return main menu");
     }
-    private void customerManagement(){
+
+    private void customerManagement() {
         System.out.println("----customerManagement----");
         System.out.println("1. Display list customers");
         System.out.println("2. Add new customer");
@@ -92,7 +95,8 @@ public class FuramaView {
         System.out.println("5. Search by name customer");
         System.out.println("6. Return main menu");
     }
-    private void facilityManagement(){
+
+    private void facilityManagement() {
         System.out.println("----facilityManagement----");
         System.out.println("1 Display list facility");
         System.out.println("2 Add new facility");
@@ -100,7 +104,8 @@ public class FuramaView {
         System.out.println("4 Delete facility");
         System.out.println("5 Return main menu");
     }
-    private void bookingManagerment(){
+
+    private void bookingManagerment() {
         System.out.println("----bookingManagerment----");
         System.out.println("1. Add new booking");
         System.out.println("2. Display list booking");
@@ -109,12 +114,14 @@ public class FuramaView {
         System.out.println("5. Edit contracts");
         System.out.println("6. Return main menu");
     }
-    private void promotionManagement(){
+
+    private void promotionManagement() {
         System.out.println("----bookingManagerment----");
         System.out.println("1. Display list customers use service");
         System.out.println("2. Display list customers get voucher");
         System.out.println("3. Return main menu");
     }
+
     private int inputEmployeeManagement() {
         int option1 = 0;
         do {
@@ -126,8 +133,9 @@ public class FuramaView {
                 System.out.println("Dữ liệu bạn nhập bị sai");
             }
         } while (option1 <= 0 || option1 > 6);
-        return option1 ;
+        return option1;
     }
+
     private int inputCustomerManagement() {
         int option2 = 0;
         do {
@@ -139,8 +147,9 @@ public class FuramaView {
                 System.out.println("Dữ liệu bạn nhập bị sai");
             }
         } while (option2 <= 0 || option2 > 6);
-        return option2 ;
+        return option2;
     }
+
     private int inputFacilityManagement() {
         int option3 = 0;
         do {
@@ -152,8 +161,9 @@ public class FuramaView {
                 System.out.println("Dữ liệu bạn nhập bị sai");
             }
         } while (option3 <= 0 || option3 > 5);
-        return option3 ;
+        return option3;
     }
+
     private int inputBookingManagerment() {
         int option4 = 0;
         do {
@@ -167,6 +177,7 @@ public class FuramaView {
         } while (option4 <= 0 || option4 > 6);
         return option4;
     }
+
     private int inputPromotionManagement() {
         int option5 = 0;
         do {
@@ -180,13 +191,14 @@ public class FuramaView {
         } while (option5 <= 0 || option5 > 3);
         return option5;
     }
-    public void employeeManagementMenu(){
-        int option1;
+
+    public void employeeManagementMenu() {
+        int option1 ;
         do {
             employeeManagement();
             System.out.println("Mời bạn chọn");
             option1 = Integer.parseInt(scanner.nextLine());
-            switch (option1){
+            switch (option1) {
                 case 1:
                     employeeController.printEmployee();
                     break;
@@ -199,29 +211,30 @@ public class FuramaView {
                     dateOfBirth = scanner.nextLine();
                     System.out.println("Nhập giới tính nhân viên");
                     gender = scanner.nextLine();
-                    System.out.println("Nhập số CMND của nhân viên");
-                    id = scanner.nextInt();
+                    System.out.println("Nhập id của nhân viên");
+                    id = Integer.parseInt(scanner.nextLine());
                     System.out.println("Nhập số điện thoại của nhân viên");
-                    numbersPhone = scanner.nextInt();
+                    numbersPhone = Integer.parseInt(scanner.nextLine());
                     System.out.println("Nhập địa chỉ email của nhân viên");
                     email = scanner.nextLine();
-                    scanner.nextLine();
                     System.out.println("Nhập trình độ của nhân viên");
                     level = scanner.nextLine();
                     System.out.println("Nhập vị trí của nhân viên");
                     title = scanner.nextLine();
                     System.out.println("Nhập lương của nhân viên");
-                    salary = scanner.nextDouble();
-                    Employee employee = new Employee(code, name, dateOfBirth, gender, id, numbersPhone, email, level, title, salary);
+                    salary = Double.parseDouble(scanner.nextLine());
+                    Employee employee = new Employee(code,name, dateOfBirth,gender,id,numbersPhone,email,level,title,salary);
                     employeeController.addEmployee(employee);
                     System.out.println("Danh sách nhân viên đã nhập là");
                     employeeController.printEmployee();
-                    scanner.nextLine();
                     break;
                 case 3:
                     System.out.println("Nhập id nhân viên");
-                    id = scanner.nextInt();
-                    scanner.nextLine();
+                    try {
+                        id = Integer.parseInt(scanner.nextLine());
+                    } catch (Exception ex) {
+                        System.out.println("Dữ liệu bạn nhập bị sai");
+                    }
                     Employee employee1 = new Employee(code, name, dateOfBirth, gender, id, numbersPhone, email, level, title, salary);
                     employee1.setId(id);
                     System.out.println("Nhập lại mã nhân viên");
@@ -231,8 +244,7 @@ public class FuramaView {
                     System.out.println("Nhập lại ngày, tháng, năm sinh");
                     dateOfBirth = scanner.nextLine();
                     System.out.println("Nhập lại số điện thoại");
-                    numbersPhone = scanner.nextInt();
-                    scanner.nextLine();
+                    numbersPhone = Integer.parseInt(scanner.nextLine());
                     System.out.println("Nhập lại email");
                     email = scanner.nextLine();
                     System.out.println("Nhập lại trình độ");
@@ -240,7 +252,7 @@ public class FuramaView {
                     System.out.println("Nhập lại vị trí");
                     title = scanner.nextLine();
                     System.out.println("Nhập lại lương");
-                    salary = scanner.nextDouble();
+                    salary = Double.parseDouble(scanner.nextLine());
                     employee1.setCode(code);
                     employee1.setName(name);
                     employee1.setDateOfBirth(dateOfBirth);
@@ -252,21 +264,23 @@ public class FuramaView {
                     employee1.setSalary(salary);
                     employeeController.editEmployee(employee1);
                     employeeController.printEmployee();
-                    scanner.nextLine();
                     break;
                 case 4:
                     System.out.println("Nhập id nhân viên muốn xóa");
-                    id = scanner.nextInt();
+                    try {
+                        id = Integer.parseInt(scanner.nextLine());
+                    } catch (Exception ex) {
+                        System.out.println("Dữ liệu bạn nhập bị sai");
+                    }
                     employeeController.deleteEmployee(id);
                     System.out.println("Danh sách sau khi xóa là ");
                     employeeController.printEmployee();
-                    scanner.nextLine();
                     break;
                 case 5:
                     System.out.println("Nhập tên nhân viên cần tìm kiếm");
-                    name1 = scanner.nextLine();
+                    name = scanner.nextLine();
                     System.out.println("Kết quả tìm kiếm");
-                    employeeController.findEmployee(name1);
+                    employeeController.findEmployee(name);
                     break;
                 case 6:
                     this.run();
@@ -276,6 +290,7 @@ public class FuramaView {
             }
         } while (option1 != 6);
     }
+
     public void customerManagementMenu(){
         int option2;
         do {
@@ -296,12 +311,11 @@ public class FuramaView {
                     System.out.println("Nhập giới tính khách hàng");
                     gender = scanner.nextLine();
                     System.out.println("Nhập số id của khách hàng");
-                    id = scanner.nextInt();
+                    id = Integer.parseInt(scanner.nextLine());
                     System.out.println("Nhập số điện thoại của khách hàng");
-                    numbersPhone = scanner.nextInt();
+                    numbersPhone = Integer.parseInt(scanner.nextLine());
                     System.out.println("Nhập địa chỉ email của khách hàng");
                     email = scanner.nextLine();
-                    scanner.nextLine();
                     System.out.println("Nhập loại khách hàng");
                     typeOfQuest = scanner.nextLine();
                     System.out.println("Nhập địa chỉ khách hàng");
@@ -310,11 +324,14 @@ public class FuramaView {
                     customerController.addCustomer(customer);
                     System.out.println("Danh sách khách hàng đã nhập là");
                     customerController.printCustomer();
-                    scanner.nextLine();
                     break;
                 case 3:
-                    System.out.println("Nhập tên khách hàng");
-                    name = scanner.nextLine();
+                    System.out.println("Nhập id khách hàng");
+                    try {
+                        id = Integer.parseInt(scanner.nextLine());
+                    } catch (Exception ex) {
+                        System.out.println("Dữ liệu bạn nhập bị sai");
+                    }
                     Customer customer1 = new Customer(code, name, dateOfBirth, gender, id, numbersPhone, email, typeOfQuest, adress);
                     customer1.setName(name);
                     System.out.println("Nhập lại mã khách hàng");
@@ -326,8 +343,7 @@ public class FuramaView {
                     System.out.println("Nhập lại giới tính");
                     gender = scanner.nextLine();
                     System.out.println("Nhập lại số điện thoại");
-                    numbersPhone = scanner.nextInt();
-                    scanner.nextLine();
+                    numbersPhone = Integer.parseInt(scanner.nextLine());
                     System.out.println("Nhập lại email");
                     email = scanner.nextLine();
                     System.out.println("Nhập lại loại khách hàng");
@@ -335,9 +351,9 @@ public class FuramaView {
                     System.out.println("Nhập lại địa chỉ");
                     adress = scanner.nextLine();
                     customer1.setCode(code);
+                    customer1.setName(name);
                     customer1.setDateOfBirth(dateOfBirth);
                     customer1.setGender(gender);
-                    customer1.setId(id);
                     customer1.setNumbersPhone(numbersPhone);
                     customer1.setEmail(email);
                     customer1.setTypeOfQuest(typeOfQuest);
@@ -348,17 +364,20 @@ public class FuramaView {
                     break;
                 case 4:
                     System.out.println("Nhập id khách hàng muốn xóa");
-                    id = scanner.nextInt();
+                    try {
+                        id = Integer.parseInt(scanner.nextLine());
+                    } catch (Exception ex) {
+                        System.out.println("Dữ liệu bạn nhập bị sai");
+                    }
                     customerController.deleteCustomer(id);
                     System.out.println("Danh sách sau khi xóa là ");
                     customerController.printCustomer();
-                    scanner.nextLine();
                     break;
                 case 5:
                     System.out.println("Nhập tên khách hàng cần tìm kiếm");
-                    name1 = scanner.nextLine();
+                    name = scanner.nextLine();
                     System.out.println("Kết quả tìm kiếm");
-                    customerController.findCustomer(name1);
+                    customerController.findCustomer(name);
                     break;
                 case 6:
                     this.run();

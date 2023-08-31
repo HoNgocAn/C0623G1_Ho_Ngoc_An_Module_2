@@ -23,6 +23,8 @@ public class CustomerRepository implements ICustomerRepository {
 
     @Override
     public void editCustomer(Customer customer) {
+        int index = 0;
+
         for (Customer c : list) {
             if (c.getName() == customer.getName()) {
                 c.setCode(customer.getCode());
@@ -34,34 +36,44 @@ public class CustomerRepository implements ICustomerRepository {
                 c.setTypeOfQuest(customer.getTypeOfQuest());
                 c.setAdress(customer.getAdress());
                 return;
-            } else {
-                System.out.println("Không tìm thấy khách hàng cần sửa thông tin");
             }
+        }
+        if (index != 0) {
+            System.out.println("Không tìm thấy khách hàng cần sửa");
+        } else {
+            System.out.println("Đã sửa thông tin khách hàng");
         }
     }
 
     @Override
     public void deleteCustomer(int id) {
+        int index1 = 0;
         for (Customer c : list) {
-            if (c.getId()==id){
+            if (c.getId() == id) {
                 this.list.remove(c);
                 return;
-            }else{
-                System.out.println("Không tìm thấy khách hàng cần xóa");
             }
         }
-
+        if (index1 != 0) {
+            System.out.println("Không tìm thấy khách hàng cần xóa");
+        } else {
+            System.out.println("Đã xóa khách hàng");
+        }
     }
 
     @Override
     public void findCustomer(String name) {
+        int index2 = 0;
         for(Customer c: list){
             if(c.getName().equals(name)){
                 System.out.println(c);
-            }else{
-                System.out.println("Không tìm thấy khách hàng cần tìm kiếm");
+                return;
             }
         }
-
+        if (index2 != 0) {
+            System.out.println("Không tìm thấy khách hàng có tên như trên");
+        } else {
+            System.out.println("Đã tìm thấy khách hàng cần tìm");
+        }
     }
 }

@@ -4,6 +4,7 @@ import casestudy.model.Person.Employee;
 import casestudy.respository.IEmployeeRepository;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class EmployeeRepository implements IEmployeeRepository {
     private final ArrayList<Employee> list = new ArrayList<>();
@@ -22,6 +23,7 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void editEmployee(Employee employee) {
+        int index = 0;
         for (Employee e : list) {
             if (e.getId()==employee.getId()){
                 e.setCode(employee.getCode());
@@ -35,32 +37,50 @@ public class EmployeeRepository implements IEmployeeRepository {
                 e.setSalary(employee.getSalary());
                 return;
             }else{
-                System.out.println("Không tìm thấy nhân viên cần sửa thông tin");
+                index++;
             }
+        }
+        if (index != 0) {
+            System.out.println("Không tìm thấy nhân viên cần sửa");
+        } else {
+            System.out.println("Đã sửa thông tin nhân viên");
         }
     }
 
     @Override
     public void deleteEmployee(int id) {
+        int index1 = 0;
         for (Employee e : list) {
             if (e.getId()==id){
                 this.list.remove(e);
                 return;
             } else {
-                System.out.println("Không tìm thấy nhân viên cần xóa");
+                index1++;
             }
+        }
+        if (index1 != 0) {
+            System.out.println("Không tìm thấy nhân viên cần xóa");
+        } else {
+            System.out.println("Đã xóa thông tin nhân viên");
         }
 
     }
 
     @Override
     public void findEmployee(String name) {
+        int index2 = 0;
         for(Employee e: list){
             if(e.getName().equals(name)){
                 System.out.println(e);
             }else {
-                System.out.println("Không tìm thấy nhân viên cần tìm kiếm");
+                index2++;
             }
+        }
+        if (index2 != 0) {
+            System.out.println("Không tìm thấy nhân viên có tên như trên");
+        } else {
+            System.out.println("Đã tìm thấy nhân viên");
         }
     }
 }
+
