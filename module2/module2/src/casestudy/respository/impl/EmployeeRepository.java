@@ -23,6 +23,7 @@ public class EmployeeRepository implements IEmployeeRepository {
     @Override
     public void addEmployee(Employee employee) {
         this.list.add(employee);
+        System.out.println("Đã thêm mới nhân viên");
         FileUtils.writeFile(PATH_NAME,convertToString(list));
     }
 
@@ -59,6 +60,7 @@ public class EmployeeRepository implements IEmployeeRepository {
         for (Employee e : list) {
             if (e.getId() == id) {
                 this.list.remove(e);
+                System.out.println("Đã xóa thông tin nhân viên");
                 return;
             } else {
                 index1++;
@@ -66,8 +68,6 @@ public class EmployeeRepository implements IEmployeeRepository {
         }
         if (index1 != 0) {
             System.out.println("Không tìm thấy nhân viên cần xóa");
-        } else {
-            System.out.println("Đã xóa thông tin nhân viên");
         }
         FileUtils.writeFile(PATH_NAME,convertToString(list));
 
@@ -79,14 +79,13 @@ public class EmployeeRepository implements IEmployeeRepository {
         for (Employee e : list) {
             if (e.getName().equals(name)) {
                 System.out.println(e);
+                System.out.println("Đã tìm thấy nhân viên");
             } else {
                 index2++;
             }
         }
         if (index2 != 0) {
             System.out.println("Không tìm thấy nhân viên có tên như trên");
-        } else {
-            System.out.println("Đã tìm thấy nhân viên");
         }
     }
 

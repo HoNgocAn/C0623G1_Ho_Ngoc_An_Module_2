@@ -23,6 +23,7 @@ public class CustomerRepository implements ICustomerRepository {
     @Override
     public void addCustomer(Customer customer) {
         this.list.add(customer);
+        System.out.println("Đã thêm khác hàng");
         FileUtils.writeFile(PATH_NAME,convertToString(list));
     }
 
@@ -57,13 +58,12 @@ public class CustomerRepository implements ICustomerRepository {
         for (Customer c : list) {
             if (c.getId() == id) {
                 this.list.remove(c);
+                System.out.println("Đã xóa khách hàng");
                 return;
             }
         }
         if (index1 != 0) {
             System.out.println("Không tìm thấy khách hàng cần xóa");
-        } else {
-            System.out.println("Đã xóa khách hàng");
         }
         FileUtils.writeFile(PATH_NAME,convertToString(list));
     }
@@ -74,13 +74,12 @@ public class CustomerRepository implements ICustomerRepository {
         for(Customer c: list){
             if(c.getName().equals(name)){
                 System.out.println(c);
+                System.out.println("Đã tìm thấy khách hàng cần tìm");
                 return;
             }
         }
         if (index2 != 0) {
             System.out.println("Không tìm thấy khách hàng có tên như trên");
-        } else {
-            System.out.println("Đã tìm thấy khách hàng cần tìm");
         }
     }
     public List<Employee> convertToEmployee() {
@@ -104,9 +103,9 @@ public class CustomerRepository implements ICustomerRepository {
         return customerList;
     }
 
-    public List<String> convertToString(ArrayList<Customer> employeeList) {
+    public List<String> convertToString(ArrayList<Customer> customerList) {
         List<String> customerStringList = new ArrayList<>();
-        for (Customer customer: employeeList) {
+        for (Customer customer: customerList) {
             customerStringList.add(customer.getCode() + COMMA +
                     customer.getName() + COMMA +
                     customer.getDateOfBirth() + COMMA +

@@ -33,16 +33,17 @@ public class FileUtils {
 //    }
     public static List<String> readFile(String path) {
         List<String> strings = new ArrayList<>();
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
-            String str;
-            while ((str = bufferedReader.readLine()) != null) {
-                strings.add(str);
+        try{
+            File file = new File(path);
+            FileReader fileReader = new FileReader(file);
+            BufferedReader reader = new BufferedReader(fileReader);
+            String line;
+            while ((line=reader.readLine())!=null){
+                System.out.println(line);
             }
-        } catch (IOException e) {
-            System.out.println();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+            reader.close();
+        }catch (Exception e){
+            e.printStackTrace();
         }
         return strings;
     }
